@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Temu by Amouna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Temu by Amouna</h1>
+    <p>وسيطك لشراء منتجات من متجر TEMU</p>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/yourFormID" method="POST" enctype="multipart/form-data">
+      <label>الاسم واللقب:</label>
+      <input type="text" name="fullname" required>
+
+      <label>رقم الهاتف:</label>
+      <input type="tel" name="phone" required>
+
+      <label>العنوان الكامل:</label>
+      <textarea name="address" required></textarea>
+
+      <label>صور المنتجات المراد شراؤها:</label>
+      <input type="file" name="product_images" multiple accept="image/*">
+
+      <label>ملاحظات إضافية:</label>
+      <textarea name="notes"></textarea>
+
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 Temu by Amouna</p>
+  </footer>
+</body>
+</html>
