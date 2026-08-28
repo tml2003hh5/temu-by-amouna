@@ -7,10 +7,27 @@ body {
   direction: rtl;
 }
 
-header {
+/* النموذج في وسط الشاشة */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* رأس النموذج */
+.form-header {
   text-align: center;
-  color: #fff;
-  padding: 30px;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -18,13 +35,14 @@ header {
   margin-bottom: 10px;
 }
 
-form {
-  max-width: 600px;
-  margin: 40px auto;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+.form-header h1 {
+  color: #b02a5e;
+  margin: 0;
+}
+
+.form-header p {
+  color: #444;
+  margin: 5px 0 15px;
 }
 
 .input-box {
@@ -54,7 +72,7 @@ input, textarea {
 
 .custom-file-label {
   display: inline-block;
-  background-color: #b02a5e; /* وردي غامق */
+  background-color: #b02a5e;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -69,7 +87,7 @@ input, textarea {
 
 button {
   width: 100%;
-  background-color: #b02a5e; /* وردي غامق */
+  background-color: #b02a5e;
   color: white;
   border: none;
   padding: 14px;
