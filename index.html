@@ -7,7 +7,8 @@
 </head>
 <body>
   <main>
-    <form>
+    <!-- النموذج مربوط بـ Formspree -->
+    <form action="https://formspree.io/f/xeaqqbab" method="POST">
       <div class="form-header">
         <img src="logo.png" alt="شعار Temu by Amouna" class="logo">
         <h1>Temu by Amouna</h1>
@@ -36,16 +37,18 @@
 
       <div class="input-box">
         <label>صور المنتجات المراد شراؤها:</label>
-        <div class="file-upload">
-          <input type="file" id="product_images" name="product_images" multiple accept="image/*">
-          <label for="product_images" class="custom-file-label">📷 رفع الصور</label>
-        </div>
-        <small>يمكنك رفع عدة صور</small>
+        <input type="file" name="product_images" multiple>
       </div>
 
       <div class="input-box">
         <label>ملاحظات إضافية:</label>
         <textarea name="notes"></textarea>
+      </div>
+
+      <!-- بريد الزبون لإرسال إشعار تأكيد -->
+      <div class="input-box">
+        <label>بريدك الإلكتروني:</label>
+        <input type="email" name="email" required>
       </div>
 
       <button type="submit">✨ إرسال الطلب ✨</button>
