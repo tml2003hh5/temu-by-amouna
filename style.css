@@ -102,18 +102,13 @@ button:hover {
 /* روابط التواصل الاجتماعي */
 .social-links {
   text-align: center;
-  margin-top: 20px;
-}
-
-.social {
-  display: inline-block;
-  margin: 0 15px;
-  text-decoration: none;
+  margin-top: 25px;
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: 60px;   /* تكبير الشعار */
+  height: 60px;
+  margin: 0 15px;
   transition: transform 0.3s ease;
 }
 
